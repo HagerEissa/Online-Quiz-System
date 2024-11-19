@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.performance-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.performance-header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.back-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #4c7faf;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e0f7e0;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #8badc9;
+}
+
+/* Filter Section */
+.filter-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    font-size: 1rem;
+    border: 2px solid #4c5baf;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.filter-section input[type="text"]:focus {
+    outline: none;
+    border-color: #102e5a;
+}
+
+/* Table Styles */
+.history-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.history-table table thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.history-table table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.history-table table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.history-table table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4c6baf;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #151c7a;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pageInfo {
+    font-size: 1.1rem;
+}

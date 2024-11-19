@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-image: url("../Assets/Images/1000_F_844104186_AaWnsDb9t3CC6dDShm6WC4JyLLcHpXzj.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 35px;
+    padding-left: 30px;
+    color: #00d084;
+    display: flex;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 800px;
+    text-align: center;
+}
+
+.quiz-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.option {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    padding: 15px;
+    background-color: #162c46;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animation for hover effect */
+label:hover {
+    background-color: #00D084;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+label:active
+{
+    transform: scale(1.02); 
+}
+/* Change color on selection */
+input[type="radio"]:checked + label {
+    background-color: #00D084;
+}
+.back-btn {
+    background-color: #162c46;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #00a56e; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+.back-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* Animation for next button */
+.next-btn {
+    background-color: #00D084;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for next button */
+.next-btn:hover {
+    background-color: #00a56e; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Add click animation for next button */
+.next-btn:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+.submit-btn{
+    background-color: #162c46;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.submit-btn:hover{
+    background-color: #a70a0a; /* Darker green on hover */
+    transform: scale(1.05);
+}
+/* Add styling for the timer */
+.timer {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    padding-top: 54px;
+    position: relative;
+    left: 65rem;
+}
+
+.timer img
+{
+    position: relative;
+    width: 30px;
+    top: 4px;
+    
+}
+
